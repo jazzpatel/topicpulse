@@ -1,0 +1,47 @@
+.card-front,
+.card-back {
+  /* @extend .shadow; */
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 8px rgba(230, 36, 36, 0.8);
+  background-color: rgb(180, 57, 57);
+  padding-left: 0rem;
+  padding-right: 0rem;
+
+  &:after {
+    content: attr(data-year);
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 37px;
+    width: 8px;
+    height: 8px;
+    line-height: 0.6;
+    border: 2px solid #fff;
+    font-size: 11px;
+    text-indent: -35px;
+    border-radius: 50%;
+    color: rgba(#868686, 0.7);
+    /* background: linear-gradient(
+      to bottom,
+      lighten(#516acc, 20%) 0%,
+      #516acc 100%
+    ); */
+}
+
+.card-back {
+  background-color: white;
+}
+.card-front {
+  font-size: 1rem;
+}
+
+.shadow {
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04), 0 2px 2px rgba(0, 0, 0, 0.04),
+    0 4px 4px rgba(0, 0, 0, 0.04), 0 8px 8px rgba(0, 0, 0, 0.04),
+    0 16px 16px rgba(0, 0, 0, 0.04);
+}
